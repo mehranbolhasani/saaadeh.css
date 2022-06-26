@@ -1,0 +1,282 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  direction: rtl;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding: 0 2em 0 0;
+}
+
+address,
+area,
+article,
+aside,
+audio,
+blockquote,
+datalist,
+details,
+dl,
+fieldset,
+figure,
+form,
+iframe,
+img,
+input,
+meter,
+nav,
+ol,
+optgroup,
+option,
+output,
+p,
+pre,
+progress,
+ruby,
+section,
+table,
+textarea,
+ul,
+video {
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Variables */
+:root {
+  --black: #000;
+  --light-grey-1: #f5f5f5;
+  --light-grey-2: #dadada;
+  --highlight: #00ffd0;
+  --link: #007bff;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Estedad;
+  src: url("fonts/estedad/Estedad-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Estedad;
+  src: url("fonts/estedad/Estedad-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Estedad;
+  src: url("fonts/estedad/Estedad-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+/* Styles */
+body {
+  font-family: Estedad;
+  font-weight: 400;
+  font-size: 1em;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  line-height: 1.7;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  color: var(--black);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+a:hover {
+  filter: brightness(1.5);
+}
+
+header {
+  background: var(--light-grey-1);
+  padding: 1em;
+  margin: 0 0 2em;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+h6 {
+  font-size: 0.8em;
+  font-weight: 800;
+}
+
+mark {
+  background-color: var(--highlight);
+  padding: 0.1em 0.4em;
+}
+
+code,
+kbd,
+pre,
+samp {
+  background-color: var(--light-grey-1);
+  border-bottom: 2px solid var(--light-grey-2);
+  padding: 0.3em 0.5em;
+  font-size: 0.8em;
+  font-family: monospace;
+  border-radius: 4px;
+}
+
+ul li,
+ol li {
+  line-height: 1.8;
+}
+
+blockquote {
+  background: var(--light-grey-1);
+  padding: 1em 1em;
+  margin: 0;
+  border-right: 4px solid var(--light-grey-2);
+  border-radius: 0.5em;
+}
+
+pre {
+  white-space: inherit;
+  word-wrap: break-word;
+}
+
+pre p {
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-bottom: 2px solid var(--light-grey-2);
+  margin: 2em auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table caption {
+  font-weight: 800;
+  margin: 0 0 1em;
+}
+
+tr:nth-child(2n) {
+  background: var(--light-grey-1);
+}
+
+td,
+th {
+  border: 1px solid var(--light-grey-2);
+  text-align: right;
+  padding: 0.5rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5em 0.5em;
+  margin-bottom: 0.5em;
+  background: #fff;
+  color: var(--black);
+  border: 1px solid var(--light-grey-2);
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-family: Estedad;
+}
+
+input:focus-visible {
+  outline: none;
+  border: 1px solid var(--link);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  text-align: left;
+  direction: ltr;
+}
+
+input:not(input[type="radio"], input[type="checkbox"]),
+select:not(input[type="radio"], input[type="checkbox"]),
+textarea:not(input[type="radio"], input[type="checkbox"]) {
+  min-width: 200px;
+}
+
+button {
+  border: none;
+  background: var(--link);
+  color: #fff;
+  padding: 0.7em 1.5em;
+  border-radius: 3px;
+  font-family: Estedad;
+}
+
+button[disabled] {
+  background: var(--light-grey-2);
+}
+
+
+figure {
+	padding: 0;
+	margin: 0 0 1em;
+}
+
+figure img {
+	margin: 0 0 0;
+}
